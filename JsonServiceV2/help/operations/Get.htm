@@ -1,0 +1,452 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+        <title>WCF 服务使用帮助</title>        
+        <link rel="Stylesheet" type="text/css" href="../../Styles/HTML.css" />
+    </head>
+    <body>
+        <div id="content">
+            <p class="heading1">WCF 服务使用帮助            
+            </p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp; 本页介绍服务的各终结点。</p>
+            <table>
+                <tr>
+                <th>NO.</th>
+                    <th>Uri</th>
+                    <th>Method</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                <td>001</td>
+                <td>/GetRadarStr?strStart={strStart}&strEnd={strEnd}</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a></td>
+                <td>Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                    获取雷达图。<br />
+                    时间参数格式为：yyyyMMddHHmmss。</td>
+                </tr>
+                 <tr>
+                <td>002</td>
+                <td>/VerifyUser?userName={userName}&passWord={passWord}</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a></td>
+                <td>Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                    验证用户,获取用户头像。</td>
+                </tr>
+                 <tr>
+                <td>003</td>
+                <td>/GetAutoStationData/{userName}?strEnd={strEnd}</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a></td>
+                <td>Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                    获取自动站数据。</td>
+                </tr>
+                <tr>
+                <td>003.1</td>
+                <td>/GetAutoStationData1/{userName}?strEnd={strEnd}</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a></td>
+                <td>Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                    获取自动站数据。(暂时开发用)</td>
+                </tr>
+                 <tr>
+                <td>004</td>
+                <td>/Get5DayForecast</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a></td>
+                <td>Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                    获取最新5天预报(2016.11.3更改为10天预报)。</td>
+                </tr>
+                 <tr>
+                <td>005</td>
+                <td>/GetZXSForecast</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a></td>
+                <td>Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                    获取最新逐小时预报。</td>
+                </tr>
+              
+                 <tr>
+                <td>006</td>
+                <td>/GetDisaster?userName={userName}&amp;strStart={strStart}&amp;strEnd={strEnd}</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a></td>
+                <td>Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                    获取灾情<br />
+                    时间参数格式为：yyyyMMddHHmmss。</td>
+                </tr>
+                 <tr>
+                <td>007</td>
+                <td>/GetLightning?strStart={strStart}&amp;strEnd={strEnd}</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a></td>
+                <td>Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                    获取闪电数据，分为20段。<br />
+                    时间参数格式为：yyyyMMddHHmmss。</td>
+                </tr>
+                <tr>
+                <td>008</td>
+                <td>/Get_2H_Lightning?strEnd={strEnd}</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a></td>
+                <td>Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                    获取2小时闪电数据，分为20段。<br />
+                    时间参数格式为：yyyyMMddHHmmss。</td>
+                </tr>
+                 <tr>
+                <td>009</td>
+                <td>/GetGeometry?userName={userName}</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a></td>
+                <td>Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                    获取用户关注区图形。</td>
+                </tr>
+                <tr>
+                    <td>
+                        009.1
+                    </td>
+                    <td>
+                        /GetGeometry_V2?userName={userName}
+                    </td>
+                    <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a>
+                    </td>
+                    <td>
+                        Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                        获取用户关注区图形(V2)。
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        009.2
+                    </td>
+                    <td>
+                        /GetRiskAlarmUsernames
+                    </td>
+                    <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a>
+                    </td>
+                    <td>
+                        Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                        获取用户名列表。
+                    </td>
+                </tr>
+                <tr>
+                <td>010</td>
+                <td>/GetTouTiao?strStart={strStart}&strEnd={strEnd}</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a></td>
+                <td>Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                    获取天气头条。<br />
+                    时间参数格式为：yyyyMMddHHmmss。</td>
+                </tr>
+                <tr>
+                <td>011</td>
+                <td>/GetRTAutoStationData?userName={userName}</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a></td>
+                <td>Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                    获取实时天气信息。<br /></td>
+                </tr>
+                <tr>
+                <td>012.1(废弃)</td>
+                <td>/GetWeatherRemind</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a></td>
+                <td>Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                    获取最新一条天气提醒。<br /></td>
+                </tr>
+                <tr>
+                    <td>
+                        012.2
+                    </td>
+                    <td>
+                        /GetWeatherRemindByUserName/{userName}
+                    </td>
+                    <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a>
+                    </td>
+                    <td>
+                        Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                        获取指定用户有效的最新的一条天气提醒。<br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        012.1
+                    </td>
+                    <td>
+                        /GetWeatherRemindByTime/{startTime}/{endTime}
+                    </td>
+                    <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a>
+                    </td>
+                    <td>
+                        Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                        获取指定时间段内的所有天气提醒。<br />
+                    </td>
+                </tr>
+                <tr>
+                <td>013</td>
+                <td>/GetDataByID?stationID={stationID}&WaterStationID={WaterStationID}</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a></td>
+                <td>Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                    获取自动站及积水站信息。<br /></td>
+                </tr>
+                <tr>
+                <td>014</td>
+                <td>/GetQPF?lon={lon}&lat={lat}</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a></td>
+                <td>Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                    根据经纬度获取QPF预报数据信息。<br /></td>
+                </tr>
+                <tr>
+                    <td>
+                        014.1
+                    </td>
+                    <td>
+                        /GetQPFByUserName/{userName}
+                    </td>
+                    <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a>
+                    </td>
+                    <td>
+                        Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                        根据用户名获取QPF预报数据信息。<br />
+                    </td>
+                </tr>
+                <tr>
+                <td>015</td>
+                <td>/GetNumofTouTiao?strTime={strTime}&number={number}&updown={updown}</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a></td>
+                <td>Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                    根据时间、预报数、时间的前后方向获取新闻头条。<br />
+                    时间参数格式为：yyyyMMddHHmmss。<br />
+                    查询方向格式为:向后查询为up,向前查询为down(不区分大小写)。</td>
+                </tr>
+                 <tr>
+                <td>016</td>
+                <td>/GetCurrentTypgoon</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a></td>
+                <td>Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />获取当前活动台风。<br />
+                    返回数据中WR[xx]字段为风圈。默认值为9999。<br /></td>
+                </tr>
+                <tr>
+                <td>017</td>
+                <td>/GetEditionURL</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a></td>
+                <td>Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />获取当前版本及下载链接。<br /></td>
+                </tr>
+                <tr>
+                <td>018</td>
+                <td>/GetMinDisaster?strEnd={strEnd}&AddTimes={AddTimes}</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a></td>
+                <td>Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />根据开始时间及增加时间获取灾害数据。<br />
+                    时间参数格式为：yyyyMMddHHmmss。<br /></td>
+                </tr>
+                 <tr>
+                <td>019</td>
+                <td>/GetCurrentWeatherReport</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a></td>
+                <td>Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />获取最新的气象报告文件内的天气预报内容。<br /></td>
+                </tr>
+                    <tr>
+                <td>020</td>
+                <td>/GetWarnning/{JDName}</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a></td>
+                <td>Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />获取最新的社区预警内容。<br />
+                暂时可接受参数为：wjcjd,xjwcjd
+                </td>
+                </tr>
+                <tr>
+                <td>021</td>
+                <td>/GetThunderRemind/{tag}</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a></td>
+                <td>Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />获取闪电提醒内容。<br />
+                暂时可接受参数为：hlg,hgq,egd
+                </td>
+                </tr>
+                <tr>
+                <td>022</td>
+                <td>/GetRiskAlarmByUsername/{userName}</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a></td>
+                <td>Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />根据用户名获取最新的风险预警状态。<br />
+                暂时可接受参数为：APP程序的登陆用户名。
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        022.1
+                    </td>
+                    <td>
+                        /GetRiskAlarmByUsername_V2/{userName}
+                    </td>
+                    <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a>
+                    </td>
+                    <td>
+                        Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                        根据用户名获取最新的风险预警状态。<br />
+                        暂时可接受参数为：APP程序的登陆用户名。
+                    </td>
+                </tr>
+                <tr>
+                <td>023</td>
+                <td>/GetWeatherWarnning</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a></td>
+                <td>Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />获取最新的天气预警状态。<br />
+                </td>
+                </tr>
+               <tr>
+                <td>024</td>
+                <td>/GetAvailableCommunityList</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a></td>
+                <td>Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />获取APP用户配置可用的社区列表。<br />
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        025
+                    </td>
+                    <td>
+                        /GetAutoStationModelData/{strQueryTime}/{strType}
+                    </td>
+                    <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/GetAutoStationModelData.htm">GET</a>
+                    </td>
+                    <td>
+                        Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                        获取模式自动站数据。<br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        026
+                    </td>
+                    <td>
+                        /GetQXKP?strStart={strStart}&strEnd={strEnd}
+                    </td>
+                    <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a>
+                    </td>
+                    <td>
+                        Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                        获取气象科普。<br />
+                        时间参数格式为：yyyyMMddHHmmss。
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        027
+                    </td>
+                    <td>
+                        /GetYXYB?strStart={strStart}&strEnd={strEnd}
+                    </td>
+                    <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a>
+                    </td>
+                    <td>
+                        Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                        获取影响预报。<br />
+                        时间参数格式为：yyyyMMddHHmmss。
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        028
+                    </td>
+                    <td>
+                        /GetNumofQixiangkepu?strTime={strTime}&number={number}&updown={updown}
+                    </td>
+                    <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a>
+                    </td>
+                    <td>
+                        Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                        根据时间、预报数、时间的前后方向获取气象科普。<br />
+                        时间参数格式为：yyyyMMddHHmmss。<br />
+                        查询方向格式为:向后查询为up,向前查询为down(不区分大小写)。
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        029
+                    </td>
+                    <td>
+                        /GetNumofYingxiangyubao?strTime={strTime}&number={number}&updown={updown}
+                    </td>
+                    <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a>
+                    </td>
+                    <td>
+                        Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                        根据时间、预报数、时间的前后方向获取影响预报。<br />
+                        时间参数格式为：yyyyMMddHHmmss。<br />
+                        查询方向格式为:向后查询为up,向前查询为down(不区分大小写)。
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        030
+                    </td>
+                    <td>
+                        /GetWaterStationData/{strQueryTime}
+                    </td>
+                    <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a>
+                    </td>
+                    <td>
+                        Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                        获取1小时内的最新的积水占数据<br />
+                        时间参数格式为：yyyyMMddHHmmss。<br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        031
+                    </td>
+                    <td>
+                        /GetPSQKForecast/{startTime}/{endTime}
+                    </td>
+                    <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a>
+                    </td>
+                    <td>
+                        Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                        获取指定时间段内的<span style="color: Red"> 人工修正 </span>的排水区块的<span style="color: Red"> 内涝风险预报
+                        </span>等级<br />
+                        时间参数格式为：yyyyMMddHHmmss。<br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        032
+                    </td>
+                    <td>
+                        /GetPSQKForecastModel/{startTime}/{endTime}
+                    </td>
+                    <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="../operations/test.aspx">GET</a>
+                    </td>
+                    <td>
+                        Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                        获取指定时间段内的<span style="color: Red"> 水动力模型 </span>的排水区块的<span style="color: Red"> 内涝风险预报 </span>等级<br />
+                        时间参数格式为：yyyyMMddHHmmss。<br />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

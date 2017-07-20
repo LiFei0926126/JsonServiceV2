@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>WCF 服务使用帮助</title>
+    <link rel="Stylesheet" type="text/css" href="../../Styles/HTML.css" />
+</head>
+<body>
+    <div id="content">
+        <p class="heading1">
+            WCF 服务使用帮助
+        </p>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp; 本页介绍服务的各终结点。</p>
+        <table>
+            <tr>
+                <th>
+                    NO.
+                </th>
+                <th>
+                    Uri
+                </th>
+                <th>
+                    Method
+                </th>
+                <th>
+                    Description
+                </th>
+            </tr>
+            <!--<tr>
+                <td>
+                    001
+                </td>
+                <td>
+                    /GetTyphoonWays
+                </td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                    <a rel="operation" href="Typhhon/GetTyphoonWays.htm">GET</a>
+                </td>
+                <td>
+                    Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                    获取可用的台风预报方式。
+                </td>
+            </tr>-->
+            <tr>
+                <td>
+                    001
+                </td>
+                <td>
+                    /GetTyphoons/{year}
+                </td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                    <a rel="operation" href="Typhhon/GetTyphoons.htm">GET</a>
+                </td>
+                <td>
+                    Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                    根据指定年份获取台风列表。
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    002
+                </td>
+                <td>
+                    /GetTyphoonRealTimePoints/{tfbh}
+                </td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                    <a rel="operation" href="Typhhon/GetTyphoonRealTimePoints.htm">GET</a>
+                </td>
+                <td>
+                    Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                    根据指定台风编号，获取台风实况路径点。
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    003
+                </td>
+                <td>
+                    /GetTyphoonForecastPoints/{tfbh}/{way}/{strQBTime}
+                </td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                    <a rel="operation" href="Typhhon/GetTyphoonForecastPoints.htm">GET</a>
+                </td>
+                <td>
+                    Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                    根据指定台风编号、预报方式和起报时间，获取台风实况路径点。
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    004
+                </td>
+                <td>
+                    /GetCurrentTyphoon
+                </td>
+                <td title="http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetCurrentTyphoon">
+                    <a href="Typhhon/GetCurrentTyphoon.htm">GET</a>
+                </td>
+                <td>
+                    Service at <a href="http://61.152.126.152/JsonService/JsonService_Geliku.svc">http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetCurrentTyphoon</a>。<br />
+                    获取最新实时BABJ台风数据（有预报路径,支持多台风）。<br />
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

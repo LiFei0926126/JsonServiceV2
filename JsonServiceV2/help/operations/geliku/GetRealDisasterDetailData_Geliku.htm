@@ -1,0 +1,368 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetRealDisasterDetailData_Geliku/{strStartTime}/{strEndTime}的帮助。
+    </title>
+    <link rel="Stylesheet" type="text/css" href="../../../Styles/HTML.css" />
+</head>
+<body>
+    <div id="content">
+        <p class="heading1">
+            http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetRealDisasterDetailData_Geliku/{strStartTime}/{strEndTime}的帮助。</p>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+            <b>Url:</b> <span class="uri-template">http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetRealDisasterDetailData_Geliku/{strStartTime}/{strEndTime}</span>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+            <b>HTTP Method: </b><span class="method">GET</span>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+            <b>Tips: </b>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+            <span class="method">{strStartTime}格式：yyyyMMddHHmmss</span>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+            <span class="method">{strEndTime}格式：yyyyMMddHHmmss</span>
+        </p>
+        <table>
+            <tr>
+                <th>
+                    Message direction
+                </th>
+                <th>
+                    Format
+                </th>
+                <th>
+                    Body
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    Request
+                </td>
+                <td>
+                    N/A
+                </td>
+                <td>
+                    The Request body is empty.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Response
+                </td>
+                <td>
+                    Json
+                </td>
+                <td>
+                    <a href="#response-json">Example</a>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <a name="#response-json">The following is an example response Json body:</a>
+            <pre class="response-json">    
+{
+    "Result":true,
+    "Message":null,
+    "Data":[
+        {
+            "DATETIME_DISASTER":"2016-10-23T12:18:30",
+            "LONTITUDE":121.1563,
+            "LATITUDE":31.15139,
+            "CASE_ADDR":"青浦 沪青平公路沈家桥路口 移动公司通讯基站内抽水",
+            "CASE_DESC":"基站被水淹没，水深50公分 因昨天晚上和前天晚上下雨沪青平河道内水倒灌进入。消防共同接听",
+            "ACCEPTER":"其它",
+            "CODE_DISASTER":1,
+            "DISTRICT":5
+        },
+        {
+            "DATETIME_DISASTER":"2016-10-23T12:12:40",
+            "LONTITUDE":121.465,
+            "LATITUDE":31.021,
+            "CASE_ADDR":"闵行 紫光路801弄2号107室 近老江川东路",
+            "CASE_DESC":"雨大造成积水，昨天报警到场未抽完，现附近30多户人家家中仍有积水（20公分-1米左右不等）。（消防共同接听）",
+            "ACCEPTER":"房屋进水",
+            "CODE_DISASTER":1,
+            "DISTRICT":3
+        }
+    ]
+}</pre>
+        </p>
+        <p>
+            The following is example of {DISTRICT} paras:</p>
+        <table>
+            <tr>
+                <td class="th">
+                    区县代码
+                </td>
+                <td class="th">
+                    区县描述
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    0
+                </td>
+                <td>
+                    未知
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    1
+                </td>
+                <td>
+                    中心城区
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    2
+                </td>
+                <td>
+                    宝山区
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    3
+                </td>
+                <td>
+                    闵行区
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    4
+                </td>
+                <td>
+                    嘉定区
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    5
+                </td>
+                <td>
+                    青浦区
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    6
+                </td>
+                <td>
+                    金山区
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    7
+                </td>
+                <td>
+                    松江区
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    8
+                </td>
+                <td>
+                    奉贤区
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    9
+                </td>
+                <td>
+                    浦东新区
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    10
+                </td>
+                <td>
+                    崇明县
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    11
+                </td>
+                <td>
+                    黄浦区
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    12
+                </td>
+                <td>
+                    静安区
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    13
+                </td>
+                <td>
+                    徐汇区
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    14
+                </td>
+                <td>
+                    杨浦区
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    15
+                </td>
+                <td>
+                    虹口区
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    16
+                </td>
+                <td>
+                    闸北区
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    17
+                </td>
+                <td>
+                    长宁区
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    18
+                </td>
+                <td>
+                    普陀区
+                </td>
+            </tr>
+        </table>
+        <p>
+            The following is example of {CODE_DISASTER} paras:</p>
+        <table>
+            <tr>
+                <td class="th">
+                    致灾因子代码
+                </td>
+                <td class="th">
+                    致灾因子描述
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    0
+                </td>
+                <td>
+                    非灾害
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    1
+                </td>
+                <td>
+                    暴雨
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    2
+                </td>
+                <td>
+                    大风
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    3
+                </td>
+                <td>
+                    雷电
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    4
+                </td>
+                <td>
+                    高温
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    5
+                </td>
+                <td>
+                    暴雪
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    6
+                </td>
+                <td>
+                    道路结冰
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    7
+                </td>
+                <td>
+                    大雾
+                </td>
+            </tr>
+           
+            
+            <tr>
+                <td>
+                    8
+                </td>
+                <td>
+                    冰雹
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    9
+                </td>
+                <td>
+                    霜冻
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    10
+                </td>
+                <td>
+                    霾
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    11
+                </td>
+                <td>
+                    寒潮
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

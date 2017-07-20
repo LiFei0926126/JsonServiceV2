@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetAutoStationDataByDatetime_5mi_SanWei/{strStartTime}/{strEndTime}的帮助。
+    </title>
+    <link rel="Stylesheet" type="text/css" href="../../../Styles/HTML.css" />
+</head>
+<body>
+    <div id="content">
+        <p class="heading1">
+            http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetAutoStationDataByDatetime_5mi_SanWei/{strStartTime}/{strEndTime}的帮助。</p>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+            <b>Url:</b> <span class="uri-template">http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetAutoStationDataByDatetime_5mi_SanWei/{strStartTime}/{strEndTime}</span>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+            <b>HTTP Method: </b><span class="method">GET</span>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+            <b>Tips: </b>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+            <span class="method">{strStartTime}格式：yyyyMMddHHmmss<br />
+                {strEndTime}格式：yyyyMMddHHmmss<br />
+                {type}格式：1,3,6等
+                </span>
+        </p>
+        <table>
+            <tr>
+                <th>
+                    Message direction
+                </th>
+                <th>
+                    Format
+                </th>
+                <th>
+                    Body
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    Request
+                </td>
+                <td>
+                    N/A
+                </td>
+                <td>
+                    The Request body is empty.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Response
+                </td>
+                <td>
+                    Json
+                </td>
+                <td>
+                    <a href="#response-json">Example</a>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <a name="#response-json">The following is an example response Json body:</a>
+            <pre class="response-json">{
+    "Result":true,
+    "Message":null,
+    "Data":[
+        {
+            "DATETIME":"2017/4/25 10:10:00",
+            "STATIONID":"58361",
+            "STATIONNAME":"闵行",
+            "LON":"121.366668701172",
+            "LAT":"31.1000003814697",
+            "TEMPERATURE":"22.9",
+            "RAINHOUR":"0",
+            "WINDSPEED":"2.7",
+            "WINDDIRECTION":"105.0"
+        },
+        {
+            "DATETIME":"2017/4/25 10:05:00",
+            "STATIONID":"58362",
+            "STATIONNAME":"宝山",
+            "LON":"121.483329772949",
+            "LAT":"31.3999996185303",
+            "TEMPERATURE":"22.4",
+            "RAINHOUR":"0",
+            "WINDSPEED":"2.9",
+            "WINDDIRECTION":"115.0"
+        }
+    ]
+}</pre>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetThunderData/{strSource}/{strStartTime}/{strEndTime}的帮助。
+    </title>
+    <link rel="Stylesheet" type="text/css" href="../../../Styles/HTML.css" />
+</head>
+<body>
+    <div id="content">
+        <p class="heading1">
+            http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetThunderData/{strSource}/{strStartTime}/{strEndTime}的帮助。</p>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+            <b>Url:</b> <span class="uri-template">http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetThunderData/{strSource}/{strStartTime}/{strEndTime}</span>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+            <b>HTTP Method: </b><span class="method">GET</span>
+        </p>
+        <table>
+            <tr>
+                <th>
+                    Message direction
+                </th>
+                <th>
+                    Format
+                </th>
+                <th>
+                    Body
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    Request
+                </td>
+                <td>
+                    N/A
+                </td>
+                <td>
+                    The Request body is empty.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Response
+                </td>
+                <td>
+                    Json
+                </td>
+                <td>
+                    <a href="#response-json">Example</a>
+                </td>
+            </tr>
+        </table>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+            <b>Tips: </b>
+        </p>
+        <p>
+            The following is example of {strSource} paras:</p>
+        <table>
+            <tr>
+                <td class="th">
+                    闪电数据源代码
+                </td>
+                <td class="th">
+                    闪电数据源名称
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    LS
+                </td>
+                <td>
+                    LS数据源
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    EN
+                </td>
+                <td>
+                    EN数据源</td>
+            </tr>
+            <tr>
+                <td>
+                    ADTD
+                </td>
+                <td>
+                    ADTD数据源</td>
+            </tr>
+        </table>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+            <span class="method">{strStartTime}格式：yyyyMMddHHmmss</span>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+            <span class="method">{strEndTime}格式：yyyyMMddHHmmss</span>
+        </p>
+        
+        <p>
+            <a name="#response-json">The following is an example response Json body:</a>
+            <pre class="response-json">{
+    "Result":true,
+    "Message":"LS数据源",
+    "Data":[
+        {
+            "LON":121.775756835938,
+            "LAT":32.6951217651367,
+            "DATETIME":"2016-11-21T00:05:14",
+            "PEAK_KA":-8.2899   //雷电强度
+        },
+        {
+            "LON":121.660217285156,
+            "LAT":32.2562217712402,
+            "DATETIME":"2016-11-21T00:07:42",
+            "PEAK_KA":-9.2415
+        }
+    ]
+}</pre>
+        </p>
+    </div>
+</body>
+</html>

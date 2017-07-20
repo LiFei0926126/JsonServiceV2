@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetUrbanFloodData_Geliku/{strType}/{strStartTime}/{strEndTime}的帮助。
+    </title>
+    <link rel="Stylesheet" type="text/css" href="../../../Styles/HTML.css" />
+</head>
+<body>
+    <div id="content">
+        <p class="heading1">
+            http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetUrbanFloodData_Geliku/{strType}/{strStartTime}/{strEndTime}的帮助。</p>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+            <b>Url:</b> <span class="uri-template">http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetUrbanFloodData_Geliku/{strType}/{strStartTime}/{strEndTime}</span>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+            <b>HTTP Method: </b><span class="method">GET</span>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+            <b>Tips: </b>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+            <span class="method">{strStartTime}格式：yyyyMMddHHmmss</span>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+            <span class="method">{strEndTime}格式：yyyyMMddHHmmss</span>
+        </p>
+        <table>
+            <tr>
+                <th>
+                    Message direction
+                </th>
+                <th>
+                    Format
+                </th>
+                <th>
+                    Body
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    Request
+                </td>
+                <td>
+                    N/A
+                </td>
+                <td>
+                    The Request body is empty.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Response
+                </td>
+                <td>
+                    Json
+                </td>
+                <td>
+                    <a href="#response-json">Example</a>
+                </td>
+            </tr>
+        </table>
+        <p>
+            The following is example of {strType} paras:</p>
+        <table>
+            <tr>
+                <td class="th">
+                    类型代码
+                </td>
+                <td class="th">
+                    类型描述
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    01
+                </td>
+                <td>
+                    短临格点降水预报
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    02
+                </td>
+                <td>
+                    短期格点降水预报
+                </td>
+            </tr>
+        </table>
+
+
+        <p>
+            <a name="#response-json">The following is an example response Json body:</a>
+            <pre class="response-json">{
+    "Result":true,
+    "Message":null,
+    "Data":[
+        {
+            "InitialForecastDate":"2016-11-22T06:00:00",
+            "DataType":"UrbanFlood",
+            "ImageExtent":{
+                "Left":121.342599,
+                "Right":121.643849,
+                "Top":31.378841,
+                "Bottom":31.120391
+            },
+            "MaxData":{
+                "ForecastDate":"2016-11-22T06:00:00",
+                "Uri":"http://61.152.126.152/RadarData/FLOODDATA/2016/11/22/6/SPCC_WATER_20161122_max.tif",
+                "TFW":"http://61.152.126.152/RadarData/FLOODDATA/2016/11/22/6/SPCC_WATER_20161122_max.tfw",
+                "XML":"http://61.152.126.152/RadarData/FLOODDATA/2016/11/22/6/SPCC_WATER_20161122_max.tif.aux.xml"
+            },
+            "Data":[
+                {
+                    "ForecastDate":"2016-11-22T07:00:00",
+                    "Uri":"http://61.152.126.152/RadarData/FLOODDATA/2016/11/22/6/SPCC_WATER_20161122_1.tif",
+                    "TFW":"http://61.152.126.152/RadarData/FLOODDATA/2016/11/22/6/SPCC_WATER_20161122_1.tfw",
+                    "XML":"http://61.152.126.152/RadarData/FLOODDATA/2016/11/22/6/SPCC_WATER_20161122_1.tif.aux.xml"
+                },
+                {
+                    "ForecastDate":"2016-11-22T08:00:00",
+                    "Uri":"http://61.152.126.152/RadarData/FLOODDATA/2016/11/22/6/SPCC_WATER_20161122_2.tif",
+                    "TFW":"http://61.152.126.152/RadarData/FLOODDATA/2016/11/22/6/SPCC_WATER_20161122_2.tfw",
+                    "XML":"http://61.152.126.152/RadarData/FLOODDATA/2016/11/22/6/SPCC_WATER_20161122_2.tif.aux.xml"
+                }
+            ]
+        }
+    ]
+}</pre>
+        </p>
+        
+    </div>
+</body>
+</html>

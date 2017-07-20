@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetAutoStationData_Geliku/{strQueryTime}的帮助。</title>
+    <link rel="Stylesheet" type="text/css" href="../../../Styles/HTML.css"/>   
+</head>
+<body>
+<div id="content">
+ <p class="heading1">http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetAutoStationData_Geliku/{strQueryTime}的帮助。</p>
+ 
+  <p xmlns="http://www.w3.org/1999/xhtml">
+ <b>Url:</b>
+ <span class="uri-template">http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetAutoStationData_Geliku/{strQueryTime}</span>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+        <b>HTTP Method: </b>
+        <span class="method">GET</span>
+      </p>
+  <p xmlns="http://www.w3.org/1999/xhtml">
+        <b>Tips: </b>
+        <span class="method">{strQueryTime}格式：yyyyMMddHHmmss</span>
+      </p>
+ <table>
+        <tr>
+          <th>Message direction</th>
+          <th>Format</th>
+          <th>Body</th>
+        </tr>
+        <tr>
+          <td>Request</td>
+          <td>N/A</td>
+          <td>The Request body is empty.</td>
+        </tr>
+        <tr>
+          <td>Response</td>
+          <td>Json</td>
+          <td>
+            <a href="#response-json">Example</a>
+          </td>
+        </tr>
+      </table>
+
+       <p>
+        <a name="#response-json">The following is an example response Json body:</a>
+        <pre class="response-json">{
+    "Result":true,
+    "Message":null,
+    "Data":[
+        {
+            "DATETIME":"2016-11-09T14:10:00",
+            "STATIONID":"99671",
+            "STATIONNAME":"新江湾城街道",
+            "LON":121.506896972656,
+            "LAT":31.3370132446289,
+            "TEMPERATURE":12.4,
+            "RAINHOUR":0,
+            "WINDSPEED":1.3,
+            "WINDDIRECTION":40
+        },
+        {
+            "DATETIME":"2016-11-09T14:10:00",
+            "STATIONID":"99647",
+            "STATIONNAME":"长风公园",
+            "LON":121.392784118652,
+            "LAT":31.2233448028564,
+            "TEMPERATURE":12.2,
+            "RAINHOUR":0,
+            "WINDSPEED":0.6,
+            "WINDDIRECTION":319
+        },
+        {
+            "DATETIME":"2016-11-09T14:10:00",
+            "STATIONID":"99646",
+            "STATIONNAME":"长寿公园",
+            "LON":121.43473815918,
+            "LAT":31.2441825866699,
+            "TEMPERATURE":12.5,
+            "RAINHOUR":0,
+            "WINDSPEED":0.6,
+            "WINDDIRECTION":198
+        }
+  ]
+}</pre>
+      </p>
+  </div>
+ </body>
+</html>

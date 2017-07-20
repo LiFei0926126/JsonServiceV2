@@ -1,0 +1,342 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>WCF 服务使用帮助</title>
+    <link rel="Stylesheet" type="text/css" href="../../Styles/HTML.css" />
+</head>
+<body>
+    <div id="content">
+        <p class="heading1">
+            WCF 服务使用帮助</p>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp; 本页介绍服务的各终结点。</p>
+        <table>
+            <tr>
+                <th>
+                    NO.
+                </th>
+                <th>
+                    Uri
+                </th>
+                <th>
+                    Method
+                </th>
+                <th>
+                    Description
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    001
+                </td>
+                <td>
+                    /GetAutoStationData_Geliku/{strQueryTime}
+                </td>
+                <td title="http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetAutoStationData_Geliku/{strQueryTime}">
+                    <a href="geliku/GetAutoStationData_Geliku.htm">GET</a>
+                </td>
+                <td>
+                    Service at <a href="http://61.152.126.152/JsonService/JsonService_Geliku.svc">http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetAutoStationData_Geliku/{strQueryTime}</a>。<br />
+                    获取距查询时间30分钟内最新的自动站数据。<br />
+                    时间参数格式为：yyyyMMddHHmmss。
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    002
+                </td>
+                <td>
+                    /GetAutoStationDataByDatetime_Geliku/{strStartTime}/{strEndTime}
+                </td>
+                <td title="http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetAutoStationDataByDatetime_Geliku/{strStartTime}/{strEndTime}">
+                    <a href="geliku/GetAutoStationDataByDatetime_Geliku.htm">GET</a>
+                </td>
+                <td>
+                    Service at <a href="http://61.152.126.152/JsonService/JsonService_Geliku.svc">http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetAutoStationDataByDatetime_Geliku/{strStartTime}/{strEndTime}</a>。<br />
+                    获取指定查询时间段内的自动站数据(10分钟间隔)。<br />
+                    时间参数格式为：yyyyMMddHHmmss。<br />
+                    <b>备注:</b>因为数据量比较大，该数据在服务器上生成文件。该数据接口返回该文件的下载Uri。
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    002.1
+                </td>
+                <td>
+                    /GetAutoStationDataByDatetime_5mi_Geliku/{strStartTime}/{strEndTime}
+                </td>
+                <td title="http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetAutoStationDataByDatetime_5mi_Geliku/{strStartTime}/{strEndTime}">
+                    <a href="geliku/GetAutoStationDataByDatetime_5mi_Geliku.htm">GET</a>
+                </td>
+                <td>
+                    Service at <a href="http://61.152.126.152/JsonService/JsonService_Geliku.svc">http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetAutoStationDataByDatetime_5mi_Geliku/{strStartTime}/{strEndTime}</a>。<br />
+                    获取指定查询时间段内的自动站数据(5分钟间隔)。<br />
+                    时间参数格式为：yyyyMMddHHmmss。<br />
+                    <b>备注:</b>因为数据量比较大，该数据在服务器上生成文件。该数据接口返回该文件的下载Uri。
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    002.2
+                </td>
+                <td>
+                    /GetAutoStationDataByDatetime_5mi_Sanwei/{strStartTime}/{strEndTime}/{type}
+                </td>
+                <td title="http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetAutoStationDataByDatetime_5mi_Sanwei/{strStartTime}/{strEndTime}/{type}">
+                    <a href="geliku/GetAutoStationDataByDatetime_5mi_Sanwei.htm">GET</a>
+                </td>
+                <td>
+                    Service at <a href="http://61.152.126.152/JsonService/JsonService_Geliku.svc">http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetAutoStationDataByDatetime_5mi_Geliku/{strStartTime}/{strEndTime}/{type}</a>。<br />
+                    获取指定查询时间段内的自动站数据(5分钟间隔)。<br />
+                    时间参数格式为：yyyyMMddHHmmss。<br />
+                    类型参数格式为：1,3,6等<br />
+                    <b>备注:</b>因为数据量比较大，该数据在服务器上生成文件。该数据接口返回该文件的下载Uri。
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    003
+                </td>
+                <td>
+                    /GetCurrentTypgoon
+                </td>
+                <td title="http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetCurrentTypgoon">
+                    <a href="geliku/GetCurrentTypgoon.htm">GET</a>
+                </td>
+                <td>
+                    Service at <a href="http://61.152.126.152/JsonService/JsonService_Geliku.svc">http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetCurrentTypgoon</a>。<br />
+                    获取最新实时BABJ台风数据（有预报路径）。<br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    004
+                </td>
+                <td>
+                   /GetHistoryTypgoon/{strStartTime}/{strEndTime}
+                </td>
+                <td title="http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetHistoryTypgoon/{strStartTime}/{strEndTime}">
+                    <a href="geliku/GetHistoryTypgoon.htm">GET</a>
+                </td>
+                <td>
+                    Service at <a href="http://61.152.126.152/JsonService/JsonService_Geliku.svc">http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetHistoryTypgoon/{strStartTime}/{strEndTime}</a>。<br />
+                    获取指定时间段内的历史BABJ台风数据（无预报路径）。<br />
+                    时间参数格式为：yyyyMMddHHmmss。<br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    005
+                    *</td>
+                <td>
+                    /GetRadarData/{strElevation}/{strQueryTime}
+                </td>
+                <td title="http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetRadarData/{strStationCode}/{strElevation}/{strQueryTime}的帮助。">
+                    <a href="geliku/GetRadarData.htm">GET</a>
+                </td>
+                <td>
+                    Service at <a href="http://61.152.126.152/JsonService/JsonService_Geliku.svc">http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetRadarData/{strElevation}/{strQueryTime}</a><br />
+                    获取指定站点，指定仰角，半小时内距指定时间最新的雷达数据。<br />
+                    时间参数格式为：yyyyMMddHHmmss。<br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    006
+                </td>
+                <td>
+                    /GetThunderData/{strSource}/{strStartTime}/{strEndTime}
+                </td>
+                <td title="http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetThunderData/{strSource}/{strStartTime}/{strEndTime}的帮助。">
+                    <a href="geliku/GetThunderData.htm">GET</a>
+                </td>
+                <td>
+                    Service at <a href="http://61.152.126.152/JsonService/JsonService_Geliku.svc">http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetThunderData/{strSource}/{strStartTime}/{strEndTime}</a><br />
+                    获取指定数据源、指定时间段内的闪电数据。<br />
+                    时间参数格式为：yyyyMMddHHmmss。<br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    007
+                </td>
+                <td>
+                    /GetWeatherWarnning
+                </td>
+                <td title="http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetWeatherWarnning的帮助。">
+                    <a href="geliku/GetWeatherWarnning.htm">GET</a>
+                </td>
+                <td>
+                    Service at <a href="http://61.152.126.152/JsonService/JsonService_Geliku.svc">http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetWeatherWarnning</a><br />
+                    获取最新的天气预警数据。<br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    008
+                </td>
+                <td>
+                    /GetWaterStationData_Geliku/{strQueryTime}
+                </td>
+                <td title="http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetWaterStationData_Geliku/{strQueryTime}的帮助。">
+                    <a href="geliku/GetWaterStationData_Geliku.htm">GET</a>
+                </td>
+                <td>
+                    Service at <a href="http://61.152.126.152/JsonService/JsonService_Geliku.svc">http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetWaterStationData_Geliku/{strQueryTime}</a><br />
+                    获取最新的积水站数据。<br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    009
+                </td>
+                <td>
+                    /GetWaterStationDataByDatetime_Geliku/{strStartTime}/{strEndTime}
+                </td>
+                <td title="http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetWaterStationDataByDatetime_Geliku/{strStartTime}/{strEndTime}的帮助。">
+                    <a href="geliku/GetWaterStationDataByDatetime_Geliku.htm">GET</a>
+                </td>
+                <td>
+                    Service at <a href="http://61.152.126.152/JsonService/JsonService_Geliku.svc">http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetWaterStationDataByDatetime_Geliku/{strStartTime}/{strEndTime}</a><br />
+                    获取指定时间段的积水站数据。<br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    010
+                    *</td>
+                <td>
+                    /GetGridRainData_Geliku/{strType}/{strStartTime}/{strEndTime}
+                </td>
+                <td title="http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetGridRainData_Geliku/{strType}/{strStartTime}/{strEndTime}的帮助。">
+                    <a href="geliku/GetGridRainData_Geliku.htm">GET</a>
+                </td>
+                <td>
+                    Service at <a href="http://61.152.126.152/JsonService/JsonService_Geliku.svc">http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetGridRainData_Geliku/{strType}/{strStartTime}/{strEndTime}</a><br />
+                    获取指定起报时间所在时间段，指定数据类型的格点降水预报数据。<br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    011
+                    *</td>
+                <td>
+                    /GetQPFData_Geliku/{strStartTime}/{strEndTime}
+                </td>
+                <td title="http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetGridRainData_Geliku/{strType}/{strStartTime}/{strEndTime}的帮助。">
+                    <a href="geliku/GetQPFData_Geliku.htm">GET</a>
+                </td>
+                <td>
+                    Service at <a href="http://61.152.126.152/JsonService/JsonService_Geliku.svc">http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetQPFData_Geliku/{strStartTime}/{strEndTime}</a><br />
+                    获取指定起报时间所在时间段的QPF预报数据。<br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    012
+                    *</td>
+                <td>
+                    /GetUrbanFloodData_Geliku/{strType}/{strStartTime}/{strEndTime}
+                </td>
+                <td title="http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetUrbanFloodData_Geliku/{strType}/{strStartTime}/{strEndTime}的帮助。">
+                    <a href="geliku/GetUrbanFloodData_Geliku.htm">GET</a>
+                </td>
+                <td>
+                    Service at <a href="http://61.152.126.152/JsonService/JsonService_Geliku.svc">http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetUrbanFloodData_Geliku/{strType}/{strStartTime}/{strEndTime}</a><br />
+                    获取指定起报时间所在时间段，指定数据类型的暴雨内涝数据。<br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    013
+                </td>
+                <td>
+                    /GetDisasterDetailData_Geliku/{strStartTime}/{strEndTime}
+                </td>
+                <td title="http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetDisasterDetailData_Geliku/{strStartTime}/{strEndTime}的帮助。">
+                    <a href="geliku/GetDisasterDetailData_Geliku.htm">GET</a>
+                </td>
+                <td>
+                    Service at <a href="http://61.152.126.152/JsonService/JsonService_Geliku.svc">http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetDisasterDetailData_Geliku/{strStartTime}/{strEndTime}</a><br />
+                    获取指定时间段内的历史灾情数据。<br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    014
+                </td>
+                <td>
+                    /GetWaterOut_Geliku/{strQueryTime}
+                </td>
+                <td title="http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetWaterOut_Geliku/{strQueryTime}的帮助。">
+                    <a href="geliku/GetWaterOut_Geliku.htm">GET</a>
+                </td>
+                <td>
+                    Service at <a href="http://61.152.126.152/JsonService/JsonService_Geliku.svc">http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetWaterOut_Geliku/{strQueryTime}</a><br />
+                    获取指定查询时间向前半小时内，每个站点最新的水文数据。如果半小时内无数据，则返回为空。<br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    015
+                </td>
+                <td>
+                    /GetWaterOutByDatetime_Geliku/{strStartTime}/{strEndTime}
+                </td>
+                <td title="http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetWaterOutByDatetime_Geliku/{strStartTime}/{strEndTime}的帮助。">
+                    <a href="geliku/GetWaterOutByDatetime_Geliku.htm">GET</a>
+                </td>
+                <td>
+                    Service at <a href="http://61.152.126.152/JsonService/JsonService_Geliku.svc">http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetWaterOutByDatetime_Geliku/{strStartTime}/{strEndTime}</a><br />
+                    获取指定时间段内的水文站数据。<br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    016
+                </td>
+                <td>
+                    /GetRealDisasterDetailData_Geliku/{strStartTime}/{strEndTime}
+                </td>
+                <td title="http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetRealDisasterDetailData_Geliku/{strStartTime}/{strEndTime}的帮助。">
+                    <a href="geliku/GetRealDisasterDetailData_Geliku.htm">GET</a>
+                </td>
+                <td>
+                    Service at <a href="http://61.152.126.152/JsonService/JsonService_Geliku.svc">http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetRealDisasterDetailData_Geliku/{strStartTime}/{strEndTime}</a><br />
+                    获取指定时间段内的实时灾情数据。<br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    017
+                </td>
+                <td>
+                    /GetYPWaterStation/{strQueryTime}
+                </td>
+                <td title="http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetYPWaterStation/{strQueryTime}的帮助。">
+                    <a href="geliku/GetYPWaterStation.htm">GET</a>
+                </td>
+                <td>
+                    Service at <a href="http://61.152.126.152/JsonService/JsonService_Geliku.svc">http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetYPWaterStation/{strQueryTime}</a><br />
+                    获取查询时间向前半小时内每个站点的最新积水数据。（杨浦区）<br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    018
+                </td>
+                <td>
+                    /GetYPWaterStationByTime/{strStartTime}/{strEndTime}
+                </td>
+                <td title="http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetYPWaterStationByTime/{strStartTime}/{strEndTime}的帮助。">
+                    <a href="geliku/GetYPWaterStationByTime.htm">GET</a>
+                </td>
+                <td>
+                    Service at <a href="http://61.152.126.152/JsonService/JsonService_Geliku.svc">http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetYPWaterStationByTime/{strStartTime}/{strEndTime}</a><br />
+                    获取指定时间段内的积水数据。（杨浦区）<br />
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>http://61.152.126.152/JsonService/JsonService.svc/GetTyphoonForecastPoints/{tfbh}/{way}/{strQBTime}的帮助。</title>
+    <link rel="Stylesheet" type="text/css" href="../../../Styles/HTML.css"/>   
+</head>
+<body>
+<div id="content">
+ <p class="heading1">
+     http://61.152.126.152/JsonService/JsonService.svc/GetTyphoonForecastPoints/{tfbh}/{way}/{strQBTime}的帮助。</p>
+ 
+  <p xmlns="http://www.w3.org/1999/xhtml">
+ <b>Url:</b>
+ <span class="uri-template">http://61.152.126.152/JsonService/JsonService.svc/GetTyphoonForecastPoints/{tfbh}/{way}/{strQBTime}</span>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+        <b>HTTP Method: </b>
+        <span class="method">GET</span>
+      </p>
+    <p xmlns="http://www.w3.org/1999/xhtml">
+        <b>Tips: </b>
+    </p>
+    <p xmlns="http://www.w3.org/1999/xhtml">
+        <span class="method">{tfbh}：调用 GetTyphoons 函数获取到的TFBH。</span><br />
+        <span class="method">{way}：调用 GetTyphoonWays 函数获取到预报方式。</span><br />
+        <span class="method">{strQBTime}格式：yyyyMMddHHmmss</span>
+    </p>
+ <table>
+        <tr>
+          <th>Message direction</th>
+          <th>Format</th>
+          <th>Body</th>
+        </tr>
+        <tr>
+          <td>Request</td>
+          <td>N/A</td>
+          <td>The Request body is empty.</td>
+        </tr>
+        <tr>
+          <td>Response</td>
+          <td>Json</td>
+          <td>
+            <a href="#response-json">Example</a>
+          </td>
+        </tr>
+      </table>
+
+       <p>
+        <a name="#response-json">The following is an example response Json body:</a>
+        <pre class="response-json">"Result":true,
+    "Message":null,
+    "Data":[
+        {
+            "TFBH":"1625",
+            "ENName":"TOKAGE",
+            "CHName":"蝎虎",
+            "Way":"BABJ",
+            "DateTime":"2016-11-27 20:00:00",
+            "Period":"6",
+            "Lon":"118",
+            "Lat":"17.1",
+            "Pressure":"985",
+            "Wind":"25",
+            "Level":"强热带风暴",
+            "WR7":"9999",
+            "WR8":"9999",
+            "WR10":"9999",
+            "WR12":"9999"
+        }
+    ]
+}</pre>
+      </p>
+  </div>
+ </body>
+</html>

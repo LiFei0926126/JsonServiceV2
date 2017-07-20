@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+        <title>WCF 服务使用帮助</title>        
+        <link rel="Stylesheet" type="text/css" href="../../Styles/HTML.css" />
+    </head>
+    <body>
+        <div id="content">
+            <p class="heading1">WCF 服务使用帮助            
+            </p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp; 本页介绍服务的各终结点。</p>
+            <table>
+                <tr>
+                <th>NO.</th>
+                    <th>Uri</th>
+                    <th>Method</th>
+                    <th>Description</th>
+                </tr>
+          
+                 <tr>
+                <td>001</td>
+                <td>/PostDisaster</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="operations/test.aspx">POST</a></td>
+                <td>Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                    上传灾情。</td>
+                </tr>
+               
+                 <tr>
+                <td>002</td>
+                <td>/PostTouTiao</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="operations/test.aspx">POST</a></td>
+                <td>Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                    上传头条信息。</td>
+                </tr>
+                <tr>
+                    <td>
+                        002.1
+                    </td>
+                    <td>
+                        /PostTouTiao_Update
+                    </td>
+                    <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="operations/test.aspx">POST</a>
+                    </td>
+                    <td>
+                        Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                        更改已上传的上传头条信息。
+                    </td>
+                </tr>
+                <tr>
+                <td>003</td>
+                <td>/PostWeatherRemind</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="operations/test.aspx">POST</a></td>
+                <td>Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                    上传天气提醒。<br /></td>
+                </tr>
+               
+
+               <tr>
+                <td>004</td>
+                <td>/PostAPPAlive</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc">
+                        <a rel="operation" href="operations/test.aspx">POST</a></td>
+                <td>Service at <a href="http://61.152.126.152/JsonService/JsonService.svc">http://61.152.126.152/JsonService/JsonService.svc</a>。<br />
+                    上传活跃APP用户信息。<br /></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

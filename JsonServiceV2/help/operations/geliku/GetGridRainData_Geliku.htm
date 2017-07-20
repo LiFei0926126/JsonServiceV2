@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetGridRainData_Geliku/{strType}/{strStartTime}/{strEndTime}的帮助。
+    </title>
+    <link rel="Stylesheet" type="text/css" href="../../../Styles/HTML.css" />
+</head>
+<body>
+    <div id="content">
+        <p class="heading1">
+            http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetGridRainData_Geliku/{strType}/{strStartTime}/{strEndTime}的帮助。</p>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+            <b>Url:</b> <span class="uri-template">http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetGridRainData_Geliku/{strType}/{strStartTime}/{strEndTime}</span>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+            <b>HTTP Method: </b><span class="method">GET</span>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+            <b>Tips: </b>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+            <span class="method">{strStartTime}格式：yyyyMMddHHmmss</span>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+            <span class="method">{strEndTime}格式：yyyyMMddHHmmss</span>
+        </p>
+        <table>
+            <tr>
+                <th>
+                    Message direction
+                </th>
+                <th>
+                    Format
+                </th>
+                <th>
+                    Body
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    Request
+                </td>
+                <td>
+                    N/A
+                </td>
+                <td>
+                    The Request body is empty.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Response
+                </td>
+                <td>
+                    Json
+                </td>
+                <td>
+                    <a href="#response-json">Example</a>
+                </td>
+            </tr>
+        </table>
+        <p>
+            The following is example of {strType} paras:</p>
+        <table>
+            <tr>
+                <td class="th">
+                    类型代码
+                </td>
+                <td class="th">
+                    类型描述
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    01
+                </td>
+                <td>
+                    短临格点降水预报(02401)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    02
+                </td>
+                <td>
+                    短期格点降水预报(07203)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    03
+                </td>
+                <td>
+                    雷达数值融合预报(36010)
+                </td>
+            </tr>
+        </table>
+
+
+        <p>
+            <a name="#response-json">The following is an example response Json body:</a>
+            <pre class="response-json">{
+    "Result":true,
+    "Message":null,
+    "Data":[
+        {
+            "InitialForecastDate":"2016-11-22T11:00:00",
+            "DataType":"短临格点降水预报",
+            "ImageExtent":{
+                "Left":112.985,
+                "Right":120.005,
+                "Top":39.035,
+                "Bottom":23.015
+            },
+            "Data":[
+                {
+                    "ForecastDate":"2016-11-22T12:00:00",
+                    "Uri":"http://61.152.126.152/TiffData/GridRain/2016/20161122/201611221100_01_001.tif",
+                    "TFW":"http://61.152.126.152/TiffData/GridRain/2016/20161122/201611221100_01_001.tfw",
+                    "XML":"http://61.152.126.152/TiffData/GridRain/2016/20161122/201611221100_01_001.tif.aux.xml"
+                },
+                 {
+                    "ForecastDate":"2016-11-22T12:00:00",
+                    "Uri":"http://61.152.126.152/TiffData/GridRain/2016/20161122/201611221100_01_002.tif",
+                    "TFW":"http://61.152.126.152/TiffData/GridRain/2016/20161122/201611221100_01_002.tfw",
+                    "XML":"http://61.152.126.152/TiffData/GridRain/2016/20161122/201611221100_01_002.tif.aux.xml"
+                }, {
+                    "ForecastDate":"2016-11-22T12:00:00",
+                    "Uri":"http://61.152.126.152/TiffData/GridRain/2016/20161122/201611221100_01_003.tif",
+                    "TFW":"http://61.152.126.152/TiffData/GridRain/2016/20161122/201611221100_01_003.tfw",
+                    "XML":"http://61.152.126.152/TiffData/GridRain/2016/20161122/201611221100_01_003.tif.aux.xml"
+                }
+            ]
+        }
+    ]
+}</pre>
+        </p>
+        
+    </div>
+</body>
+</html>

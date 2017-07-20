@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>http://61.152.126.152/JsonService/JsonService.svc/GetRiskWarnning/{CommunityID}的帮助。</title>
+    <link rel="Stylesheet" type="text/css" href="../../../Styles/HTML.css"/>   
+</head>
+<body>
+<div id="content">
+ <p class="heading1">http://61.152.126.152/JsonService/JsonService.svc/GetRiskWarnning/{CommunityID}的帮助。</p>
+ 
+  <p xmlns="http://www.w3.org/1999/xhtml">
+ <b>Url:</b>
+ <span class="uri-template">http://61.152.126.152/JsonService/JsonService.svc/GetRiskWarnning/{CommunityID}</span>
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">
+        <b>HTTP Method: </b>
+        <span class="method">GET</span>
+      </p>
+ <table>
+        <tr>
+          <th>Message direction</th>
+          <th>Format</th>
+          <th>Body</th>
+        </tr>
+        <tr>
+          <td>Request</td>
+          <td>N/A</td>
+          <td>The Request body is empty.</td>
+        </tr>
+        <tr>
+          <td>Response</td>
+          <td>Json</td>
+          <td>
+            <a href="#response-json">Example</a>
+          </td>
+        </tr>
+      </table>
+
+       <p>
+        <a name="#response-json">The following is an example response Json body:</a>
+        <pre class="response-json">{
+  "Result": true,
+  "Message": null,
+  "Data": [
+    {
+      "ID": 20208,
+      "FORECASTTIME": "2016-06-20T19:07:01",
+      "OBJECTNAME": "九亭镇",
+      "TYPE": 0,
+      "STATE": 2,
+      "LEVEL": 4,
+      "DETAILS": "上海中心气象台2016年06月20日19时7分解除九亭镇暴雨内涝风险IV预警:目前降水已明显减弱，暴雨内涝风险预警解除。"
+    }
+  ]
+}</pre>
+      </p>
+      <p>
+            The following is example of Type paras:</p>
+        <table>
+            <tr>
+                <td class="th">
+                    风险预警类型代码
+                </td>
+                <td class="th">
+                    风险预警类型名称
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    0
+                </td>
+                <td>
+                    暴雨内涝风险预警
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    1
+                </td>
+                <td>
+                    雷电风险预警
+                    </td>
+            </tr>            
+        </table>
+             <p>
+            The following is example of State paras:</p>
+        <table>
+            <tr>
+                <td class="th">
+                    风险预警操作代码
+                </td>
+                <td class="th">
+                    风险预警操作名称
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    0
+                </td>
+                <td>
+                    发布
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    1
+                </td>
+                <td>
+                    更新
+                    </td>
+            </tr>
+            <tr>
+                <td>
+                    2
+                </td>
+                <td>
+                    解除
+                </td>
+            </tr>
+            
+        </table>
+        
+    </div>
+ </body>
+</html>

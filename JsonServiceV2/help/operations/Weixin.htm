@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>WCF 服务使用帮助</title>
+    <link rel="Stylesheet" type="text/css" href="../../Styles/HTML.css"/>
+</head>
+<body>
+<div id="content">
+ <p class="heading1">WCF 服务使用帮助</p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp; 本页介绍服务的各终结点。</p>
+            <table>
+                <tr>
+                <th>NO.</th>
+                    <th>Uri</th>
+                    <th>Method</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                <td>001</td>
+                <td>/Get_1H_Lightning?{strEnd}</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc/Get_1H_Lightning/{EndTime}"><a href="Weixin/Get_1H_Lightning.htm">GET</a></td>
+                <td>Service at http://61.152.126.152/JsonService/JsonService.svc/Get_1H_Lightning/{EndTime}。<br />
+                    获取最近1小时内发生的闪电数据。<br />
+                    时间参数格式为：yyyyMMddHHmmss。</td>
+                </tr>
+                <tr>
+                <td>002</td>
+                <td>/GetHealthyMeteorological</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc/GetHealthyMeteorological"><a href="Weixin/GetHealthyMeteorological.htm">GET</a></td>
+                <td>Service at http://61.152.126.152/JsonService/JsonService.svc/GetHealthyMeteorological。<br />
+                    获取最新的健康气象数据。</td>
+                </tr>
+                 <tr>
+                <td>003</td>
+                <td>/GetAirQuality</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc/GetAirQuality"><a href="Weixin/GetAirQuality.htm">GET</a></td>
+                <td>Service at http://61.152.126.152/JsonService/JsonService.svc/GetAirQuality。<br />
+                    获取最新的空气质量数据。</td>
+                </tr>
+                <tr>
+                <td>004</td>
+                <td>/GetDistrictList</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc/GetDistrictList"><a href="Weixin/GetDistrictList.htm">GET</a></td>
+                <td>Service at http://61.152.126.152/JsonService/JsonService.svc/GetDistrictList。<br />
+                    获取区县列表数据。</td>
+                </tr>
+                <tr>
+                <td>005</td>
+                <td>/GetCommunityListByDistrict/{District_DM}</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc/GetCommunityListByDistrict/{District_DM}"><a href="Weixin/GetCommunityListByDistrict.htm">GET</a></td>
+                <td>Service at http://61.152.126.152/JsonService/JsonService.svc/GetCommunityListByDistrict/{District_DM}。<br />
+                    根据区县代码获取街道列表数据。</td>
+                </tr>
+                <tr>
+                <td>006</td>
+                <td>/GetCommunityByXY/{lon}/{lat}</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc/GetCommunityByXY/{lon}/{lat}"><a href="Weixin/GetCommunityByXY.htm">GET</a></td>
+                <td>Service at http://61.152.126.152/JsonService/JsonService.svc/GetCommunityByXY/{lon}/{lat}。<br />
+                    根据所给经纬度定位所在街道数据。<br />
+                    经纬度以"_"代替"."。
+                    </td>
+                </tr>
+                <tr>
+                <td>007</td>
+                <td>/GetIndex</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc/GetIndex"><a href="Weixin/GetIndex.htm">GET</a></td>
+                <td>Service at http://61.152.126.152/JsonService/JsonService.svc/GetIndex。<br />
+                    获取最新的指数数据。
+                    </td>
+                </tr>
+                <tr>
+                <td>008</td>
+                <td>/GetCommunityAutoStationData/{lon}/{lat}</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc/GetCommunityAutoStationData/{lon}/{lat}"><a href="Weixin/GetCommunityAutoStationData.htm">GET</a></td>
+                <td>Service at http://61.152.126.152/JsonService/JsonService.svc/GetCommunityAutoStationData/{lon}/{lat}。<br />
+                    根据经纬度获取最新的社区自动站数据。<br />
+                    经纬度以"_"代替"."。
+                    </td>
+                </tr>
+                <tr>
+                <td>009</td>
+                <td>/GetDistrictAutoStationData/{District_DM}</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc/GetDistrictAutoStationData/{District_DM}"><a href="Weixin/GetDistrictAutoStationData.htm">GET</a></td>
+                <td>Service at http://61.152.126.152/JsonService/JsonService.svc/GetDistrictAutoStationData/{District_DM}。<br />
+                    获取最新的区县自动站数据。
+                    </td>
+                </tr>
+                 <tr>
+                <td>010</td>
+                <td>/Get5DayForecast_Weixin</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc/Get5DayForecast_Weixin"><a href="Weixin/Get5DayForecast_Weixin.htm">GET</a></td>
+                <td>Service at http://61.152.126.152/JsonService/JsonService.svc/Get5DayForecast_Weixin。<br />
+                    获取最新的全市5天预报数据。
+                    </td>
+                </tr>
+                 <tr>
+                <td>011</td>
+                <td>/GetWeatherWarnning</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc/GetWeatherWarnning"><a href="Weixin/GetWeatherWarnning.htm">GET</a></td>
+                <td>Service at http://61.152.126.152/JsonService/JsonService.svc/GetWeatherWarnning。<br />
+                    获取当前生效以及距现在1小时以内的解除的天气预警数据。
+                    </td>
+                </tr>
+                 <tr>
+                <td>012</td>
+                <td>GetRiskWarnning/{CommunityID}</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc/GetRiskWarnning/{CommunityID}"><a href="Weixin/GetRiskWarnning.htm">GET</a></td>
+                <td>Service at http://61.152.126.152/JsonService/JsonService.svc/GetRiskWarnning/{CommunityID}。<br />
+                    根据社区ID获取最新风险预警数据。
+                    </td>
+                </tr>
+                 <tr>
+                <td>013</td>
+                <td>/GetCommunityListByDistrictName/{District_Name}</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc/GetCommunityListByDistrictName/{District_Name}"><a href="Weixin/GetCommunityListByDistrictName.htm">GET</a></td>
+                <td>Service at http://61.152.126.152/JsonService/JsonService.svc/GetCommunityListByDistrictName/{District_Name}。<br />
+                    根据区县代码获取街道列表数据。</td>
+                </tr>
+                <tr>
+                <td>014</td>
+                <td>/GetDistrictAutoStationData/{District_DM}</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc/GetDistrictAutoStationDataByName/{District_Name}"><a href="Weixin/GetDistrictAutoStationDataByName.htm">GET</a></td>
+                <td>Service at http://61.152.126.152/JsonService/JsonService.svc/GetDistrictAutoStationDataByName/{District_Name}。<br />
+                    获取最新的区县自动站数据。
+                    </td>
+                </tr>
+                 <tr>
+                <td>015</td>
+                <td>/GetCommunityAutoStationDataByCommunityID/{CommunityID}</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc/GetCommunityAutoStationDataByCommunityID/{CommunityID}"><a href="Weixin/GetCommunityAutoStationDataByCommunityID.htm">GET</a></td>
+                <td>Service at http://61.152.126.152/JsonService/JsonService.svc/GetCommunityAutoStationDataByCommunityID/{CommunityID}。<br />
+                    根据社区编号获取最新的社区自动站数据。<br />
+                    </td>
+                </tr>
+                <tr>
+                <td>016</td>
+                <td>/GetCommunityWaterStationData/{CommunityID}</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc/GetCommunityWaterStationData/{CommunityID}"><a href="Weixin/GetCommunityWaterStationData.htm">GET</a></td>
+                <td>Service at http://61.152.126.152/JsonService/JsonService.svc/GetCommunityWaterStationData/{CommunityID}。<br />
+                    根据社区编号获取最新的社区积水站数据。<br />
+                    暂时只有新江湾城街道，五角场街道，嘉定镇有数据。
+                    </td>
+                </tr>
+                <tr>
+                <td>017</td>
+                <td>/GetPotentialPoints</td>
+                <td title="http://61.152.126.152/JsonService/JsonService.svc/GetPotentialPoints"><a href="Weixin/GetPotentialPoints.htm">GET</a></td>
+                <td>Service at http://61.152.126.152/JsonService/JsonService.svc/GetPotentialPoints。<br />
+                    获取风险隐患点数据。<br />
+                    </td>
+                </tr>
+                </table>
+</div>
+</body>
+</html>

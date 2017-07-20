@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>http://61.152.126.152/JsonService/JsonService.svc/GetAutoStationModelData/{strQueryTime}/{strType}的帮助。
+    </title>
+    <link rel="Stylesheet" type="text/css" href="../../Styles/HTML.css" />
+</head>
+<body>
+    <div id="content">
+        <p class="heading1">
+            http://61.152.126.152/JsonService/JsonService.svc/GetAutoStationModelData/{strQueryTime}/{strType}的帮助。</p>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+            <b>Url:</b> <span class="uri-template">http://61.152.126.152/JsonService/JsonService.svc/GetAutoStationModelData/{strQueryTime}/{strType}</span>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+            <b>HTTP Method: </b><span class="method">GET</span>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+            <b>Tips: </b><span class="method">{strQueryTime}格式：yyyyMMddHHmmss</span>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+            <b>Tips: </b><span class="method">{strType}：02401，07203，36010</span>
+        </p>
+        <table>
+            <tr>
+                <th>
+                    Message direction
+                </th>
+                <th>
+                    Format
+                </th>
+                <th>
+                    Body
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    Request
+                </td>
+                <td>
+                    N/A
+                </td>
+                <td>
+                    The Request body is empty.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Response
+                </td>
+                <td>
+                    Json
+                </td>
+                <td>
+                    <a href="#response-json">Example</a>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <a name="#response-json">The following is an example response Json body:</a>
+            <pre class="response-json">{
+    "Result":true,
+    "Message":null,
+    "Data":[
+        {
+            "ForecastTime":"2017-03-01T16:00:00",
+            "Period":0,
+            "GridDataType":"02401",
+            "StationID":"58361",
+            "StationName":"闵行区",
+            "Lon":121.3666667,
+            "Lat":31.1,
+            "RainHour":9999
+        },
+        {
+            "ForecastTime":"2017-03-01T16:00:00",
+            "Period":1,
+            "GridDataType":"02401",
+            "StationID":"58361",
+            "StationName":"闵行区",
+            "Lon":121.3666667,
+            "Lat":31.1,
+            "RainHour":9999
+        },
+        {
+            "ForecastTime":"2017-03-01T16:00:00",
+            "Period":2,
+            "GridDataType":"02401",
+            "StationID":"58361",
+            "StationName":"闵行区",
+            "Lon":121.3666667,
+            "Lat":31.1,
+            "RainHour":9999
+        }
+    ]
+}</pre>
+        </p>
+    </div>
+</body>
+</html>

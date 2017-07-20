@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetRadarData/{strStationCode}/{strElevation}/{strQueryTime}的帮助。
+    </title>
+    <link rel="Stylesheet" type="text/css" href="../../../Styles/HTML.css" />
+</head>
+<body>
+    <div id="content">
+        <p class="heading1">
+            http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetRadarData/{strStationCode}/{strElevation}/{strQueryTime}的帮助。</p>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+            <b>Url:</b> <span class="uri-template">http://61.152.126.152/JsonService/JsonService_Geliku.svc/GetRadarData/{strStationCode}/{strElevation}/{strQueryTime}</span>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+            <b>HTTP Method: </b><span class="method">GET</span>
+        </p>
+        <table>
+            <tr>
+                <th>
+                    Message direction
+                </th>
+                <th>
+                    Format
+                </th>
+                <th>
+                    Body
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    Request
+                </td>
+                <td>
+                    N/A
+                </td>
+                <td>
+                    The Request body is empty.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Response
+                </td>
+                <td>
+                    Json
+                </td>
+                <td>
+                    <a href="#response-json">Example</a>
+                </td>
+            </tr>
+        </table>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+            <b>Tips: </b>
+        </p>
+        <p xmlns="http://www.w3.org/1999/xhtml">
+            <span class="method">{strQueryTime}格式：yyyyMMddHHmmss</span>
+        </p>
+       
+        <p>
+            The following is example of {strStationCode} paras:</p>
+        <table>
+            <tr>
+                <td class="th">
+                    站点代码
+                </td>
+                <td class="th">
+                    站点名称</td>
+            </tr>
+            <tr>
+                <td>
+                    SH</td>
+                <td>
+                    上海（南汇）
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    QP</td>
+                <td>
+                    上海（青浦）</td>
+            </tr>
+            <tr>
+                <td>
+                    HZ</td>
+                <td>
+                    杭州</td>
+            </tr>
+            <tr>
+                <td>
+                    ZS 
+                </td>
+                <td>
+                    舟山
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    NB</td>
+                <td>
+                    宁波
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    NT
+                </td>
+                <td>
+                    南通
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    NJ
+                </td>
+                <td>
+                    南京
+                </td>
+            </tr>
+        </table>
+        <p>
+            The following is example of {strElevation} paras:</p>
+        <table>
+            <tr>
+                <td class="th">
+                    仰角代码
+                </td>
+                <td class="th">
+                    仰角数值
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    01
+                </td>
+                <td>
+                    0.5度
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    02
+                </td>
+                <td>
+                    1.5度
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    03
+                </td>
+                <td>
+                    2.4度
+                </td>
+            </tr>
+        </table>
+        
+
+
+
+        <p>
+            <a name="#response-json">The following is an example response Json body:</a>
+            <pre class="response-json">{
+    "Result":true,
+    "Message":null,
+    "Data":{
+        "RadarImageUrl":"http://61.152.126.152/RadarData/SH/19/01/201611091729/radar.tif",
+        "RadarImageTFW":"http://61.152.126.152/RadarData/SH/19/01/201611091729/radar.tfw",
+        "RadarImageXML":"http://61.152.126.152/RadarData/SH/19/01/201611091729/radar.tif.aux.xml",
+        "TimeSecond":1478683740,
+        "ImageExtent":{
+            "Left":116.393553071857,
+            "Right":127.370446928143,
+            "Top":35.4938734230543,
+            "Bottom":26.433067725099
+        }
+    }
+}</pre>
+        </p>
+        
+    </div>
+</body>
+</html>
